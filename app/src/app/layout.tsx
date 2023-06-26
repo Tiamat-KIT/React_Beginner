@@ -2,7 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { ReactNode } from "react"
 import type { AppProps } from "next/app"
-import {MDXProvider} from "@mdx-js/react"
+// import {MDXProvider} from "@mdx-js/react"
 
 function H1(props: {children: ReactNode}){
     return <h1 className="text-3xl font-bold">{props.children}</h1>
@@ -31,12 +31,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <MDXProvider components={components}>
         <body className={inter.className}>
           <h1 className="text-3xl">Reactの資料だゾ</h1>
           {children}
         </body>
-      </MDXProvider>
     </html>
   )
 }
