@@ -2,9 +2,6 @@ import { notFound } from "next/navigation";
 import parse from "html-react-parser";
 import { getDetail, getList } from "../../../util/microcms";
 
-// キャッシュを利用しない
-export const revalidate = 0;
-
 export async function generateStaticParams() {
  const { contents } = await getList();
 
@@ -39,4 +36,3 @@ export default async function StaticDetailPage({
   </div>
  );
 }
-// 動かない?

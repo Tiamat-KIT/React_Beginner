@@ -1,21 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { ReactNode } from "react"
-import type { AppProps } from "next/app"
-// import {MDXProvider} from "@mdx-js/react"
-
-function H1(props: {children: ReactNode}){
-    return <h1 className="text-3xl font-bold">{props.children}</h1>
-}
-
-function P(props: {children?: ReactNode}) {
-    return <p className="p-3">{props.children}</p>
-  }
-
-const components = {
-  h1: H1,
-  p: P,
-}
 
 const inter = Inter({ subsets: ['latin'] })
 
