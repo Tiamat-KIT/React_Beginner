@@ -9,7 +9,7 @@ export type Doc = {
     id: string,
     title: string,
     content: string,
-    // eyecatch? :MicroCMSDate
+    // eyecatch? :MicroCMSImage
 } & MicroCMSDate
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
