@@ -5,7 +5,12 @@ import type {
     MicroCMSDate
 } from "microcms-js-sdk"
 
-export type Doc = Record<"id" | "title" | "content",string> & {eyecatch?: MicroCMSImage} & MicroCMSDate
+export type Doc = {
+    id: string,
+    title: string,
+    content: string,
+    // eyecatch? :MicroCMSDate
+} & MicroCMSDate
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
     throw new Error("MICROCMS_SERVICE_DOMAIN is required");
