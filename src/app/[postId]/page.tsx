@@ -29,10 +29,10 @@ export default async function StaticDetailPage({
     }
 
     return (
-        <div>
+        <article className="prose container mx-auto">
             <h1 className="text-3xl">{post.title}</h1>
-            <h2 className="text-blue-200">{time}</h2>
+            <h2 className="text-blue-400">{time}</h2>
             <div>{parse(post.content)}</div>
-        </div>
+        </article>
     );
 }

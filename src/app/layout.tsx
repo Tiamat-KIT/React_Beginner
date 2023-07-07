@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
         <body className={inter.className}>
-          <h1 className="text-3xl">Reactの資料だゾ</h1>
+          <h1 className="text-3xl text-center">Reactの資料だゾ</h1>
           {children}
         </body>
     </html>

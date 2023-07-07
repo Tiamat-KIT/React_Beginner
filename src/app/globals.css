@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    background-size: cover;
+    /* height: 100px;
+    width: 90%; */
+    background-image: linear-gradient(90deg, rgb(179, 220, 255), rgb(135, 249, 255));
+    overflow-x: hidden;
+}
